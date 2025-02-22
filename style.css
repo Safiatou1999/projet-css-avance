@@ -1,0 +1,451 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto";
+    color: #333; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.pro{
+    color: #00b39b;
+}
+
+h1, h2 {
+    color:#00b39b;
+}
+.intro-text{
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+.sygnet{
+    display: block;
+    margin: 0 auto;
+}
+header .logo {
+    height: 40px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+header nav ul li:hover{
+    color: #00b0b9;
+    transition: 0.5s;
+}
+
+header nav ul li a {
+    color: inherit; /* Couleur par défaut */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header .dropdown {
+    position: relative;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Couleur de fond blanche */
+    min-width: 160px;
+    z-index: 1;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+}
+
+header .dropdown-content a:hover {
+    background-color: #006c6d;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #00b0b9;
+    margin-bottom: 20px;
+}
+
+.intro-text div{
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: white;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: auto;
+   
+}
+
+.services > div {
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+}
+.services p{
+    color: #ffffff;
+    font-size: 24px;
+}
+.services h2{
+    color: #ffffff;
+}
+.services .card {
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+
+}
+
+.services img {
+    width: 24px;
+   aspect-ratio: 1;
+}
+
+.services .card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color:#00b39b
+}
+
+.services .card p {
+    font-size: 16px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.services > div > select {
+   background-color: transparent;
+   border: none;
+   padding-right: 38px;
+   font-size: 20px;
+   color: white;
+   text-decoration: underline;
+}
+
+.services .patients {
+    border: 3px solid #00b0b9; /* Bord vert pour les patients */
+}
+
+.services .doctors {
+    border: 3px solid #006c6d; /* Bord bleu pour les médecins */
+}
+
+.services .clinics {
+    border: 3px solid #333; /* Bord noir pour les cliniques */
+}
+.card-green{
+    background-color:#00b39b;
+    color: #ffffff;
+}
+.card-blue{
+    background-color: blue;
+    color: #ffffff;
+}
+.card-gray{
+    background-color:black;
+    color: #ffffff;
+}
+
+.division{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.stats h2 {
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.stats h2 br {
+    display: block;
+}
+
+.stats-contain {
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.stats-contain li {
+    flex: 1 0 22%; /* Pour avoir 4 éléments sur la première ligne */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.stats-contain a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.stats-contain .tuotempo  img{
+    height: 16px;
+}
+.stats-contain .gipo  img{ 
+    height: 16px;
+}
+.gicli{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Expérience des soins de santé */
+.grid{
+    display: grid;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.experience .text {
+    
+    color: #333;
+   
+    display: grid;
+    justify-content: space-between;
+}
+.float{
+    position: absolute;
+    background-color: rgba(210, 241, 241, 0.6);
+
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    top: 0;
+}
+.fade-elements__visible{
+    background-color: #ffffff;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 8px;
+    justify-content:center;
+}
+.haut {
+    transform: translate(0px ,-40px);
+}
+.stats__header{
+    height: 100%;
+}
+.stats__header h1{
+    font-size: 34px;
+}
+.stats__header p{
+    text-align: justify;
+    padding-left: 100px;
+}
+.experience .text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+h2{
+    color: #00b39b;
+}
+
+/* Careers Section */
+.careers {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+.careers h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.career {
+    padding: 20px;
+    
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.career img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.career a {
+    color: #00b0b9;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #00b0b9;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.mum {
+    text-align: center;
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+.cta:hover {
+    background-color: #006c6d;
+}
+
+/* Footer */
+footer {
+    color:black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Statistiques Section : aligner légèrement vers la gauche et centrer */
+.stats-container .stat:nth-child(1) {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.stats-container .stat:nth-child(2) {
+    text-align: center;
+}
+
+.stats-container .stat:nth-child(3) {
+    text-align: center;
+}
+
+.stats-container .stat:nth-child(4) {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Réorganisation des blocs de statistiques */
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    grid-gap: 20px;
+    align-items: center;
+}
+
+/* Réorganisation des 4 blocs de texte dans la section mondiale */
+.global-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 en haut, 2 en bas */
+    grid-gap: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.global-blocks .block {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+    .experience .text {
+        width: 100%;
+    }
+
+    .stats-container .stat {
+        width: 100%; /* Les statistiques se réorganisent en colonne sur petits écrans */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .career-grid {
+        flex-direction: column; /* Les blocs de carrière deviennent verticaux sur petits écrans */
+    }
+
+    .career {
+        width:   100%;
+ }
+}
