@@ -12,10 +12,14 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #ABABAB;
+    font-size: 15px;
+    padding: 20px 0px;
 }
+
 .pro{
     color: #00b39b;
+    padding: 0px 9px;
 }
 
 h1, h2 {
@@ -29,6 +33,11 @@ h1, h2 {
 
 h1{
     text-align: center;
+    font-size: 34px;
+}
+h3{
+    color:#00b39b;
+    font-size: 24px;
 }
 
 /* Header */
@@ -42,6 +51,7 @@ header .container {
     justify-content: space-around;
     padding: 0 20px;
 }
+
 .sygnet{
     display: block;
     margin: 0 auto;
@@ -103,7 +113,7 @@ header .dropdown-content a:hover {
     display: flex;
     max-width: 1100px;
     margin: auto;
-    /* grid-template-rows: 1fr 1fr; */
+
 }
 
 .intro h1 {
@@ -151,8 +161,6 @@ header .dropdown-content a:hover {
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-
-
 }
 
 .services img {
@@ -181,17 +189,6 @@ header .dropdown-content a:hover {
    text-decoration: underline;
 }
 
-.services .patients {
-    border: 3px solid #00b0b9; /* Bord vert pour les patients */
-}
-
-.services .doctors {
-    border: 3px solid #006c6d; /* Bord bleu pour les médecins */
-}
-
-.services .clinics {
-    border: 3px solid #333; /* Bord noir pour les cliniques */
-}
 .card-green{
     background-color:#00b39b;
     color: #ffffff;
@@ -229,12 +226,9 @@ header .dropdown-content a:hover {
 }
 
 .stats-contain li {
-    flex: 1 0 22%; /* Pour avoir 4 éléments sur la première ligne */
     display: flex;
     justify-content: center;
 }
-
-
 
 .stats-contain a {
     display: flex;
@@ -268,14 +262,12 @@ header .dropdown-content a:hover {
 .experience .text {
     
     color: #333;
-   
     display: grid;
     justify-content: space-between;
 }
 .float{
     position: absolute;
     background-color: rgba(210, 241, 241, 0.6);
-
     width: 100%;
     height: 100%;
     left: 0;
@@ -318,7 +310,6 @@ h2{
     padding: 50px 20px;
     max-width: 1100px;
     margin: auto;
-    
 }
 
 .careers h2 {
@@ -336,7 +327,6 @@ h2{
 
 .career {
     padding: 20px;
-    
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -383,25 +373,6 @@ footer {
 footer p {
     font-size: 14px;
     margin-bottom: 10px;
-}
-
-/* Statistiques Section : aligner légèrement vers la gauche et centrer */
-.stats-container .stat:nth-child(1) {
-    text-align: left;
-    padding-left: 20px;
-}
-
-.stats-container .stat:nth-child(2) {
-    text-align: center;
-}
-
-.stats-container .stat:nth-child(3) {
-    text-align: center;
-}
-
-.stats-container .stat:nth-child(4) {
-    text-align: right;
-    padding-right: 20px;
 }
 
 /* Réorganisation des blocs de statistiques */
